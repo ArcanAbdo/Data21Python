@@ -32,10 +32,7 @@ while value_input:
         in0 = 0
     for i in values:
         add = i + values[in0]
-        if add < 2020:
-            for j in values:
-                add2 = add + j
-                if add2 == 2020:
-                    print(i, values[in0], j)
-                    print(i*values[in0]*j)
-                    value_input = False
+        if add == 2020:
+            print(i, values[in0])
+            print(i*values[in0])
+            value_input = False
